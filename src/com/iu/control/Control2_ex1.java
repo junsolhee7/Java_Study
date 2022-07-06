@@ -27,11 +27,6 @@ public class Control2_ex1 {
 		} else if(form == 2 ) {
 			payFinal = pay * 0.967;
 			System.out.println("계약직은 3.3% 공제하여 " + (int)payFinal + "원 입니다.");
-		}
-		
-		
-		
-		
+		}	
 	}
-
 }
