@@ -26,7 +26,7 @@ public class Control2_ex2 {
 		}
 		System.out.println("암호화된 알파벳 : " + ch);
 		
-		
+		//Study Edition
 
 	}
 
