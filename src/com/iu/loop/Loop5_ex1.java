@@ -54,7 +54,7 @@ public class Loop5_ex1 {
 				int reqExp = 30;
 				int exp = 0;
 				int kill = 0;
-				int gold = 0;
+				int gold = 1000;
 				boolean levelUp = true;
 				
 				for(level = 1; level<16; level++) {
@@ -120,3 +120,4 @@ public class Loop5_ex1 {
 
 }
 //do while 잘 쓰이지 않음
+//교재 맨뒤 연습문제 훑어보기
