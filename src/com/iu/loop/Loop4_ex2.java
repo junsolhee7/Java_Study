@@ -31,7 +31,6 @@ public class Loop4_ex2 {
 				System.out.println(sound);
 			}
 			
-			
 //===================================================================================
 //			int count = 10;
 //			String sound = "타타탕";
@@ -58,3 +57,5 @@ public class Loop4_ex2 {
 	}
 }
 //ALT + 화살표위아래 = 복붙대신 이동
+//깃허브 커밋 자주하기
+//시작할때 pull하기
