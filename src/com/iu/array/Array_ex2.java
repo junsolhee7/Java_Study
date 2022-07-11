@@ -38,12 +38,35 @@ public class Array_ex2 {
 		//1회성
 		//0-6미만의 랜덤한 데미지로 몬스터를 공격
 		//광역데미지
-		for(int i=0; i<monsterPartyNames.length;i++) {
-			System.out.print(monsterPartyNames[i]+ " "+ monsterPartyHps[i] +" -> ");
-			randomMagicPower = random.nextInt(magicPower);
-			monsterPartyHps[i] -= randomMagicPower;
-			System.out.println(monsterPartyHps[i]+" (-"+ randomMagicPower + ")");
+		boolean gameStop = true;
+		int gamecheck;
+		
+		
+		while(gameStop) {
+			int death = 0;
+			System.out.println("1.사냥");
+			System.out.println("2.도망치기");
+			gamecheck = sc.nextInt();
+			if(gamecheck==1) {
+				gameStop = true;
+				for(int i=0; i<monsterPartyNames.length;i++) {
+					System.out.print(monsterPartyNames[i]+ " "+ monsterPartyHps[i] +" -> ");
+					randomMagicPower = random.nextInt(magicPower);
+					monsterPartyHps[i] -= randomMagicPower;
+					System.out.println(monsterPartyHps[i]+" (-"+ randomMagicPower + ")");
+					if(monsterPartyHps[i] <=0) {
+						death++;
+					}
+					
+				}
+			}else {
+				break;
+			}
+			System.out.println("사냥한 몬스터 수 : " + death);
+			
 		}
+		//1.사냥
+		//2.도망치기
 
 		
 
